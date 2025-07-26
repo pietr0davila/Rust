@@ -1,10 +1,6 @@
 use std::io::stdin;
 use std::io::{ Write, stdout };
 
-fn main() {
-    println!("------- Conversor de temperatura -------");
-    conversion_type()
-}
 
 fn readln(mut var: String) -> String {
     loop {
@@ -15,6 +11,11 @@ fn readln(mut var: String) -> String {
                 .expect("Error reading line, try again!!!");
         return var;
     }
+}
+
+fn main() {
+    println!("------- Conversor de temperatura -------");
+    conversion_type()
 }
 
 fn conversion_type() {
